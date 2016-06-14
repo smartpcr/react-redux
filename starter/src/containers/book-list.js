@@ -18,7 +18,6 @@ class BookList extends Component {
 	}
 
 	render() {
-		console.log('rendering list');
 		return (
 			<ul className="list-group col-sm-4">
 				{this.renderList()}
@@ -35,7 +34,6 @@ function mapStateToProps(state) {
 	};
 }
 
-// whenever selectBook is called, the result should be passed to all of our reducers
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({ selectBook: selectBook }, dispatch);
 }
